@@ -50,11 +50,13 @@ The optimizers were compared using:
 
 ## Key Findings
 
-* Adam achieved the fastest convergence and strongest overall performance.
-* RMSprop also demonstrated efficient learning but was slightly less consistent.
+* Adam achieved the fastest convergence and strongest overall performance but overfitted significantly.
+* RMSprop also demonstrated efficient learning but was slightly less consistent and overfitted aswell.
 * SGD required more epochs to reach comparable accuracy.
 * Momentum improved SGD performance by accelerating convergence and reducing oscillations.
-
+<p align="center">
+<img src = "Optimization/plots_optimization/final_accuracy_comparision.png" width = 700>
+</p>
 ---
 
 # Project 2: Regularization Techniques
@@ -101,7 +103,9 @@ A CNN incorporating Dropout, L2 Regularization, Batch Normalization, and Data Au
 | Combined Model*     | 70.35%            | **72.16%**          |
 
 * The Combined Model was trained for 40 epochs, while all other models were trained for 20 epochs.
-
+<p align = "center">
+<img src = "Regularization/plots_regularization/final_accuracy_comparision.png" width = 700>
+</p>
 
 ## Key Findings
 
@@ -130,12 +134,12 @@ However, the Combined Model also exhibited larger fluctuations in validation per
 
 ```
 ├── Optimization/
-│   ├── optimizer_comparison.ipynb
-│   └── plots/
+│   ├── Optimizing_Algorithms.ipynb
+│   └── plots_optimization/
 │
 ├── Regularization/
-│   ├── regularization_comparison.ipynb
-│   └── plots/
+│   ├── Regularization_Techniques_in_Convolutional_Neural_Networks.ipynb
+│   └── plots_regularization/
 │
 └── README.md
 ```
